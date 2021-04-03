@@ -32,6 +32,7 @@ module API
       end
 
       def create_order(attrs)
+        puts"-------create_order-------#{attrs.inspect}------------"
         create_order_errors = {
           ::Account::AccountError => 'market.account.insufficient_balance',
           ::Order::InsufficientMarketLiquidity => 'market.order.insufficient_market_liquidity',
@@ -39,6 +40,8 @@ module API
         }
 
         order = build_order(attrs)
+
+        puts "-------333333-------------------------------- #{order.inspect}"
         submit_order(order)
         order
         # TODO: Make more specific error message for ActiveRecord::RecordInvalid.

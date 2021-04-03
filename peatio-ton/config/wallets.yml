@@ -1,0 +1,44 @@
+- name:             Ton Deposit Wallet
+  blockchain_key:   ton-mainnet
+  currency_id:      ton
+  # Address where deposits will be collected to.
+  address:          'changeme'   # IMPORTANT: Always wrap this value in quotes!
+  kind:             deposit  # Wallet kind (deposit, hot, warm, cold or fee).
+  nsig:             1        # Number of signatures required for performing withdraw.
+  max_balance:      0.0
+  status:           active
+  gateway:          tond  # Gateway client name.
+  settings:
+    #
+    # Ton gateway client settings.
+    uri:          http://127.0.0.1:33310
+
+- name:             Ton Hot Wallet
+  blockchain_key:   ton-mainnet
+  currency_id:      ton
+  # Address where deposits will be collected to.
+  address:          'changeme'  # IMPORTANT: Always wrap this value in quotes!
+  kind:             hot     # Wallet kind (deposit, hot, warm, cold or fee).
+  nsig:             1       # Number of signatures required for performing withdraw.
+  max_balance:      100.0
+  status:           active
+  gateway:          tond  # Gateway client name.
+  settings:
+    #
+    # Ton gateway client settings.
+    uri:          http://127.0.0.1:33310
+
+- name:             Ton Warm Wallet
+  blockchain_key:   ton-mainnet
+  currency_id:      ton
+  # Address where deposits will be collected to.
+  address:          'changeme'  # IMPORTANT: Always wrap this value in quotes!
+  kind:             warm    # Wallet kind (deposit, hot, warm, cold or fee).
+  nsig:             1       # Number of signatures required for performing withdraw.
+  max_balance:      1000.0
+  status:           active
+  gateway:          tond  # Gateway client name.
+  settings:
+    #
+    # Ton gateway client settings.
+    uri:          http://127.0.0.1:33310

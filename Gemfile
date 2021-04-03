@@ -46,7 +46,7 @@ gem 'email_validator', '~> 1.6.0'
 gem 'validate_url', '~> 1.0.4'
 gem 'clipboard-rails', '~> 1.7.1'
 gem 'god', '~> 0.13.7', require: false
-gem 'mini_racer', '~> 0.2.4', require: false
+gem 'mini_racer', require: false
 gem 'arel-is-blank', '~> 1.0.0'
 gem 'sentry-raven', '~> 2.9.0', require: false
 gem 'memoist', '~> 0.16.0'
